@@ -1,0 +1,52 @@
+------------------------------------------------------- NAVIGATION BAR -----------------------------------------
+--- ULTIMATE FITNESS (LEFT HEADING)\
+--- navigation buttons -- Home
+                       -- About 
+                       -- Services
+                       -- Testimonials
+                       -- Contact Us
+--------------------------------------------------- HOME SECTION ----------------------------------------------------
+
+--- LEFT HAND LOGO
+--- RIGHT SIDE - Welcome to, Ultimate Fitness
+                             where your fitness journey begins
+              INSTAGRAM | WHATSAPP | YOUTUBE    (LINKS)
+
+------------------------------------------------------ ABOUT SECTION ------------------------------------------------------------
+
+
+
+------------------------------------------------------ SEVICES SECTION --------------------------------
+
+---- BRIEF DESCRIPTION OF SERVICES
+---- PRICING PANEL
+---- WANT A CUSTOMISED PLAN ? ( CONTACT US )
+
+---------------------------------------------------------OTHER ( BMI CALCULATOR )-------------------------
+
+--- BMI CALCULATOR
+
+---------------------------------------- CONTACT US SECTION ------------------------------------
+
+-- EMAIL ID         (GYM)
+-- PHONE NUMBER      (GYM)
+-- CONTACT FORM
+       -- NAME
+       -- EMAIL 
+       -- PHONE NUMBER
+       -- MESSAGE
+
+-- SUBMIT BUTTON
+-----------------------------------------------------------------------------------------------------------
+-------------------------------------------(FOOTER)----------------------------------------------------
+
+
+
+
+
+------------------------------------COLOR PALETTE--------------------------
+
+#2b2e4a (BLACKISH)
+#e84545 (RED)
+#903749 (MAROON)
+#53354a (DARK MAROON)

@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* NAVIGATION BAR STYLING STARTS */
+nav{
+    position: sticky;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #53354a;
+    z-index: 10;
+}
+
+.nav-list{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.nav-list li{
+    list-style: none;
+    font-size: 20px ;
+    margin: 0 1.75rem;
+    padding: .5rem 0;
+    transition: all .15s ease-out;
+}
+
+.nav-list a{
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #e84545;
+    font-weight: 500;
+    transition: all .15s ease-out;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 1px;
+    border-bottom: 3.5px solid #e84545;
+    /* text-decoration: underline #2b2e4a; */
+    /* border: 1px solid yellow; */
+}
+
+.logo span{
+    padding-bottom: 1px;
+    border-bottom: 3.5px solid white;
+    /* text-decoration: underline white; */
+    color: #e84545;
+}
+
+.nav-list li a:hover{
+    background-color: #2b2e4a;
+    color: white;
+}
+
+.nav-list li:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px){
+    .logo{
+        font-size: 30px;
+    }
+    .nav-list li{
+        font-size: 15px;
+        margin: 0 .75rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .logo{
+        font-size: 35px;
+    }
+    .nav-list li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px){
+    nav{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+}
+
+/* NAVIGATION BAR STYLING ENDS */
+
+/* HOME PAGE STYLING STARTS */
+
+.home-page{
+    /* border: 2px solid red; */
+    height: 100vh;
+    background-color: #2b2e4a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.home-content{
+    padding: 2rem;
+    line-height: 2.5rem;
+    font-size: 20px;
+    width: 45%;
+    /* border: 1px solid green; */
+}
+
+.home-heading{
+    line-height: 2.25rem;
+    font-weight: bold;
+    color: #e84545;
+    font-size: 40px;
+}
+
+.home-welcome{
+    line-height: 2.5rem;
+    font-size: 30px;
+}
+
+@media (max-width: 768px){
+    .home-page{
+        flex-direction: column;
+        height: 100%;
+    }
+    .home-content{
+        margin-bottom: 4rem;
+        width: 70%;
+    }
+    .gym-logo{
+        transform: scale(.85);
+    }
+}
+
+/* HOME PAGE STYLING ENDS */
+
+/* ABOUT PAGE STYLING STARTS */
+
+.about-page{
+    /* border: 2px solid red; */
+    background-color: #2b2e4a;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    /* border: 2px solid yellow; */
+}
+
+.about-heading{
+    /* border: 2px solid green; */
+    font-size: 50px;
+    color: #e84545;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.about-content{
+    /* border: 2px solid blue; */
+    font-size: 20px;
+    color: white;
+    line-height: 2rem;
+}
+
+.about-image img{
+    border-radius: 20px;
+}
+
+/* ABOUT PAGE STYLING ENDS */
+
+/* SERVICES PAGE STYLING STARTS */
+
+.services-page{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-color: #2b2e4a;
+}
+
+.service-heading{
+    margin-top: 6rem;
+    width: 80%;
+    /* border: 2px solid yellow; */
+    font-size: 50px;
+    color: #e84545;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.pricing-panel{
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 80%;
+    /* height: 65%; */
+    background-color: #53354a ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-heading{
+    border-bottom: 1px solid #e84545;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e84545;
+    text-align: center;
+}
+
+.pricing-images{
+    width: 58%;
+    margin: 10px;
+}
+
+.perks-list, .perks-list li{
+    color: white;
+    list-style: none;
+}
+
+.perks-list li{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px 0;
+    border-top: 1px solid #e84545;
+}
+
+.service-contact, .service-contact a{
+    /* border: 2px solid green; */
+    color: white;
+}
+
+.service-contact{
+    width: 80%;
+}
+
+.plan-prices{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #e84545;
+}
+
+.service-contact a{
+    color: #e84545;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: all .25s ;
+}
+
+.service-contact a:hover{
+    color: white;
+    background-color: #e84545;
+    border-radius: 20px;
+}
+
+.pricing-panel button{
+    /* border: 1px solid #e84545; */
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #53354a;
+    color: white;
+    font-size: 18px;
+    transition: all .25s;
+}
+
+.pricing-panel button:hover{
+    transform: scale(1.1);
+    background-color: #e84545;
+}
+
+.basic-plan, .intermediate-plan{
+    border-right: 1px solid #e84545;
+}
+
+/* SERVICES PAGE STYLING ENDS */
+
+
+/* TESTIMONIALS STYLING STARTS */
+
+.testimonial-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 100%;
+    background-color: #2b2e4a;
+}
+
+.testimonial-heading{
+    margin-top: 6rem;
+    width: 80%;
+    font-size: 40px;
+    color: #e84545;
+    font-weight: bold;
+}
+
+.testimonial-items{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #e84545;
+    margin: 2rem 0;
+    width: 80%;
+    height: 150%;
+    transition: all .25s ease-in-out;
+}
+
+.username{
+    color: #53354a;
+    margin: 0 1rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.user-content{
+    line-height: 20px;
+    margin: .5rem 0;
+    color: white;
+}
+
+.testimonial-items:hover{
+    transform: scale(1.03);
+}
+
+.many-more{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1rem 0;
+    width: 80%;
+}
+
+/* TESTIMONIALS STYLING ENDS */
+
+/* CONTACT PAGE STYLING STARTS */
+.contact-page{
+    height: 100vh;
+    background-color: #2b2e4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-heading{
+    margin-top: 6rem;
+    color: #e84545;
+    width: 80%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.send-btn{
+    width: 60%;
+    text-align: right;
+}
+
+.send-btn button{
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    background-color: #2b2e4a;
+    color: #e84545;
+    padding: .5rem 1.5rem;
+    border-radius: 30px;
+    transition: all .15s ease-in-out;
+}
+
+.send-btn button:hover{
+    transform: scale(1.05);
+    background-color: #e84545;
+    color: white;
+}
+
+form{
+    background-color: #e84545;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.form-element{
+    margin-left: 3rem;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    color: white;
+}
+form input{
+    padding: 0 5px;
+    margin-right: 3rem;
+    width: 40%;
+    color: white;
+    font-size: 25px;
+    background-color: #e84545;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.form-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input::placeholder{
+    font-size: 18px;
+    color: #53354a;
+}
+
+form input:focus{
+    outline: none;
+}
+/* CONTACT PAGE STYLING ENDS */
