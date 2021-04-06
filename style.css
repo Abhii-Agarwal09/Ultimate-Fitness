@@ -27,7 +27,6 @@ nav{
 }
 
 .nav-list{
-    /* border: 1px solid red; */
     display: flex;
 }
 
@@ -52,14 +51,11 @@ nav{
     font-weight: 500;
     padding-bottom: 1px;
     border-bottom: 3.5px solid #e84545;
-    /* text-decoration: underline #2b2e4a; */
-    /* border: 1px solid yellow; */
 }
 
 .logo span{
     padding-bottom: 1px;
     border-bottom: 3.5px solid white;
-    /* text-decoration: underline white; */
     color: #e84545;
 }
 
@@ -96,15 +92,19 @@ nav{
         position: sticky;
         top: 0;
         z-index: 10;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+    }
+    .navigation-btns{
+        margin-top: 10px;
     }
 }
 
 /* NAVIGATION BAR STYLING ENDS */
 
 /* HOME PAGE STYLING STARTS */
-
 .home-page{
-    /* border: 2px solid red; */
     height: 100vh;
     background-color: #2b2e4a;
     display: flex;
@@ -118,7 +118,6 @@ nav{
     line-height: 2.5rem;
     font-size: 20px;
     width: 45%;
-    /* border: 1px solid green; */
 }
 
 .home-heading{
@@ -135,24 +134,35 @@ nav{
 
 @media (max-width: 768px){
     .home-page{
-        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100vw;
+    }
+    .gym-logo{
+        height: 70%;
+        width: 50%;
+    }
+    .gym-logo img{
+        width: 100%;
         height: 100%;
     }
     .home-content{
-        margin-bottom: 4rem;
-        width: 70%;
+        width: 50%;
+        height: 70%;
     }
-    .gym-logo{
-        transform: scale(.85);
+    .home-welcome, .home-text{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    .home-heading{
+        font-size: 30px;
     }
 }
 
 /* HOME PAGE STYLING ENDS */
 
 /* ABOUT PAGE STYLING STARTS */
-
 .about-page{
-    /* border: 2px solid red; */
     background-color: #2b2e4a;
     display: flex;
     justify-content: space-evenly;
@@ -166,11 +176,9 @@ nav{
     justify-content: space-evenly;
     width: 50%;
     height: 50%;
-    /* border: 2px solid yellow; */
 }
 
 .about-heading{
-    /* border: 2px solid green; */
     font-size: 50px;
     color: #e84545;
     font-weight: bold;
@@ -178,7 +186,6 @@ nav{
 }
 
 .about-content{
-    /* border: 2px solid blue; */
     font-size: 20px;
     color: white;
     line-height: 2rem;
@@ -188,6 +195,39 @@ nav{
     border-radius: 20px;
 }
 
+@media (max-width: 1024px){
+    .about-heading{
+        margin-top: 0;
+    }
+    .about-content{
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px){
+    .about-page{
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .main-container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-heading{
+        margin-top: 6rem;
+        text-align: center;
+        width: 60%;
+    }
+    .about-content{
+        width: 89%;
+    }
+    .about-image{
+        display: none;
+    }
+}
 /* ABOUT PAGE STYLING ENDS */
 
 /* SERVICES PAGE STYLING STARTS */
@@ -302,6 +342,21 @@ nav{
     border-right: 1px solid #e84545;
 }
 
+
+@media (max-width: 1024px){
+    .pricing-panel{
+        margin: 30px 0;
+    }
+}
+@media (max-width: 768px){
+    .services-page{
+        flex-direction: column;
+    }
+    /* .pricing-panel{
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+}
 /* SERVICES PAGE STYLING ENDS */
 
 
